@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compila main.cpp",
+            "label": "Compila file attivo",
             "type": "process",
             "command": "/usr/bin/g++",
             "args": [
@@ -11,12 +11,12 @@
                 "-Wextra",
                 "-g",
                 "-O0",
-                "${workspaceFolder}/main.cpp",
+                "${file}",
                 "-o",
-                "${workspaceFolder}/programma"
+                "${fileDirname}/${fileBasenameNoExtension}.out"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": ["$gcc"],
             "group": {
