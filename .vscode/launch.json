@@ -2,17 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Avvia main.cpp",
+            "name": "Avvia file C++ attivo",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/programma",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "stopAtEntry": false,
             "externalConsole": false,
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb",
-            "preLaunchTask": "Compila main.cpp"
+            "preLaunchTask": "Compila file attivo"
         }
     ]
 }
